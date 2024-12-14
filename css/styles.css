@@ -1339,8 +1339,11 @@ input[type='checkbox']:checked + .modal-form-agreement-label .modal-form-checkbo
 
 .mobile-menu-close {
     position: absolute;
-    top: 28px;
-    right: 28px;
+    top: 20px;
+    right: 20px;
+
+    width: 32px;
+    height: 32px;
 
     display: flex;
     justify-content: center;
@@ -1353,9 +1356,24 @@ input[type='checkbox']:checked + .modal-form-agreement-label .modal-form-checkbo
     cursor: pointer;
 }
 
+@media only screen and (min-width: 768px) {
+  .mobile-menu-close {
+    top: 32px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+  }
+} 
+
 .mobile-menu-close-icon {
     stroke-width: 3px;
-    stroke: #fbfbfb;;
+    stroke: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-close-icon {
+    stroke-width: 4px;
+  }
 }
 
 .mobile-menu-list {
@@ -1368,6 +1386,13 @@ input[type='checkbox']:checked + .modal-form-agreement-label .modal-form-checkbo
     margin-bottom: auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .mobile-menu-list {
+    font-size: 16px;
+    line-height: 125%;    
+  }
+}
+
 .mobile-menu-item {
     border: 1px solid #fbfbfb;
     border-radius: 12px;
@@ -1376,6 +1401,13 @@ input[type='checkbox']:checked + .modal-form-agreement-label .modal-form-checkbo
     height: 44px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color, color;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-item {
+    min-width: 122px;
+    padding: 12px;
+  }
 }
 
 .mobile-menu-item:active {
@@ -1398,7 +1430,7 @@ input[type='checkbox']:checked + .modal-form-agreement-label .modal-form-checkbo
 .mobile-menu-btn {
     border-radius: 30px;
     border: none;
-    padding: 16px 32px;
+    padding: 16px;
     min-width: 175px;
     min-height: 52px;
 
@@ -1416,6 +1448,12 @@ input[type='checkbox']:checked + .modal-form-agreement-label .modal-form-checkbo
 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color, border, color;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    min-width: 157px;
+  }
 }
 
 .mobile-menu-btn:active {
